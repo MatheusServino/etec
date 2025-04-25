@@ -1,0 +1,34 @@
+
+#include <stdio.h>
+
+int main() {
+    int v1,v2,v3,v4;
+    printf("insira o primeiro valor:");
+    scanf("%i",&v1);
+    if((v1%2==0)||(v1%3==0)){
+printf("o valor é divisivel por: %i",v1);
+}
+     printf("insira o segundo valor:");
+    scanf("%i",&v2);
+    if((v2%2==0)||(v2%3==0)){
+printf("o valor é divisivel por: %i",v2);
+}
+     printf("insira o terceiro valor:");
+    scanf("%i",&v3);
+    if((v3%2==0)||(v3%3==0)){
+printf("o valor é divisivel por: %i",v3);
+}
+     printf("insira o quarto valor:");
+    scanf("%i",&v4);
+    if((v4%2==0)||(v4%3==0)){
+printf("o valor é divisivel por: %i",v4);
+}
+
+
+    
+    
+   
+  
+
+    return 0;
+}

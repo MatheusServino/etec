@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float v,p,t,x;
+    printf("digite o valor: ");
+    scanf("%f",&v);
+    printf("digite o tempo: ");
+    scanf("%f",&t);
+     printf("digite a taxa: ");
+    scanf("%f",&x);
+    p=v+((v*x/100)*t);
+    printf("O valor da pretação é: %f",p);
+   
+
+    return 0;
+}

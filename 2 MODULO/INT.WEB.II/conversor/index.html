@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Bases</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="imputNumber">
+        <label for="number" class="fontVT">digite um número</label>
+            
+            <div id="typeNumber">          
+                <p>
+                    <input type="radio" id="binary" name="typeNumber" value="B">Binário
+                    
+                </p>
+                <p>
+                    <input type="radio" id="decimal" name="typeNumber" value="D" checked>Decimal
+                </p>
+                <p>
+                    <input type="radio" id="hexa" name="typeNumber" value="H">Hexadecimal
+                </p>
+            </div>
+
+            <input type="text" id="number" oninput="configuraMascara()"> 
+            
+            <button onclick="converter()">Converter</button>  
+    </div>  
+    <div id="resultBinary" class="resultado">
+        <h1 class="fontVT">Binário</h1>
+    </div>
+    <div id="resultDecimal" class="resultado">
+        <h1 class="fontVT">Decimal</h1>
+    </div>
+    <div id="resultHexa" class="resultado">
+        <h1 class="fontVT">Hexadecimal</h1>
+    </div>  
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

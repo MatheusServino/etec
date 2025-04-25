@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Decimal para Binário e Hexadecimal</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        button{
+            border-radius: 1000px;
+            border-color: black;
+        }
+       fieldset{
+        border-color: black;
+       }
+       
+   </style>
+</head>
+<body>
+    
+    <h1>Conversor de decimal para binário e hexadecimal</h1>
+    
+        <fieldset>
+            <legend>Digite um número decimal</legend>
+            <input type="text" id="decimalInput" placeholder="Digite apenas números">
+            <div id="result">
+                <p id="binarioResult"></p>
+                <p id="hexaResult"></p>
+            
+        </fieldset>
+        <br>    
+
+        <button onclick="converter()">converter</button>
+        <button onclick="limpar()">limpar</button>
+        
+        <script>
+            function converter(){
+                //captura o valor digitado, ja transformado para um numero inteiro
+                const decimal = parseInt(document.getElementById('decimalInput').value)
+                //testa se é um numero inteiro válido
+                if( isNaN(decimal) ){
+                    alert("Por favor, digite um número inteiro válido.") 
+                    //limpa o campo
+                    limpar()
+                    return
+                }
+                //aqui a mágia acontece... nada numa mão.... nada na outra....
+                const binario = decimal.toString(2) //2 é a conversão parea binario
+                const hexadecimal = decimal.toString(16) //16 é a conversão para hexadecimal
+                //exibe a resposta na tela
+                document.getElementById('binarioResult').textContent = binario
+                document.getElementById('hexaResult').textContent = hexadecimal.toUpperCase()
+            }
+            function limpar(){
+                //captura os elementos que devem ser limpos
+                var input = document.getElementById('decimalInput')
+                var binario = document.getElementById('binarioResult')
+                var hexadecimal = document.getElementById('hexaResult')
+                //limpa os dados apropriadamente
+                input.value = ''
+                decimal.textContent = ''
+                hexadecimal.textContent = ''
+                //coloca o cursor novamente no campo
+                input.focus()
+
+            }
+        </script>
+      
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+classe-jogador
+atributos- numero,posição,nome
+metodo- jogar,treinar,correr
+objeto- nome do jogador, seu numero,posição
+
+
+classe-computador
+atributos-numero ip,configurações,
+metodo- programar, calcular
+objeto- pc1,pc2

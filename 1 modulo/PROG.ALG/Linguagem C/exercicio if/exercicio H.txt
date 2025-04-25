@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+int main() {
+  int n1,n2,n3,n4,n5,ma,me;
+  printf("insira o primeiro valor:");
+  scanf("%i",&n1);
+  ma=n1;
+  me=n1;
+     printf("insira o segundo valor:");
+  scanf("%i",&n2);
+  if(n2>ma){
+      ma=n2;
+  }
+  if(n2<me){
+      me=n2;
+  }
+  printf("insira o terceiro valor");
+  scanf("%i",&n3);
+  if(n3>ma){
+  ma=n3;
+  }
+  if(n3<me){
+      me=n3;
+  }
+  printf("insira o quarto valor");
+  scanf("%i",&n4);
+  if(n4>ma){
+  ma=n4;
+  }
+  if(n4<me);{
+      me=n4;
+  }
+  printf("insira o quinto valor");
+  scanf("%i",&n5);
+  if(n5>ma){
+  ma=n5;
+  }
+  if(n5<me);{
+      me=n5;
+  }
+  printf("o maior numero é: %i",ma);
+  printf("o menor numero é: %i",me);
+  
+
+    return 0;
+}

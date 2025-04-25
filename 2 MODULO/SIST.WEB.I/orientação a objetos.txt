@@ -1,0 +1,25 @@
+classe-jogador
+atributos- numero,posição,nome
+metodo- jogar,treinar,correr
+objeto- De Bruyne, meia, 17
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Class Data{
+	public $dia=01;
+	public $mês=01;
+	public $ano=2021;
+	
+	public function apresentar(){
+	echo "dia: {$this->dia}
+		mês:{$this->mês}
+		ano:{$this->ano}";
+	}
+}
+	$c1 = new Data();
+	$c1->apresentar();
+
+$c2 = new Data(01,01,2007);
+$c2->apresentar();
+
+
+

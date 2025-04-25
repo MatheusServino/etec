@@ -1,0 +1,17 @@
+ <?php
+            $busca = $banco->query("select * from jogos order by nome");
+            if(!$busca){
+                echo "<tr><td>Infelizmente a busca deu errado";
+            }else{
+                if($busca->num_rows==0){
+                    echo"<tr><td>Nenhum registro encontrado";
+                }else{
+                    while($reg=$busca->fetch_object()){
+                        $t = thumb($reg->capa);
+                        echo "<tr><td><img src='$t' class='mini'/>";
+                        echo "<td><a href='detalhes.php?cod=$reg->cod'>$reg->nome</a>";
+                        echo "<td>Adm";
+                    }
+                }  
+            }
+            ?>

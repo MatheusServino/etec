@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+
+int main() {
+int cont,a;
+cont=1;
+do{
+    if(cont%4==0){
+        printf("o numero %i é divisivel\n",cont);
+    }
+    cont=cont+1;
+}while(cont<=200);
+    
+    
+
+    return 0;
+}

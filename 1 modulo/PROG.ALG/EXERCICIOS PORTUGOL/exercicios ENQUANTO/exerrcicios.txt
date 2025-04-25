@@ -1,0 +1,247 @@
+algoritmo "exercicio A"
+
+var
+tab,cont,a:inteiro
+inicio
+
+escreva("digite a tabuada desejada:")
+leia(tab)
+
+cont<-1
+enquanto cont<=10 faca
+ a<-tab*cont
+ escreval(tab,"x",cont,"=",a)
+ cont<-cont+1
+fimenquanto
+fimalgoritmo
+
+algoritmo "Exercicio B"
+var
+A,S,CONT,NI : INTEIRO
+
+inicio
+cont<-1
+ni<-1
+S<-0
+enquanto cont<=100 FACA
+S<-S+NI
+cont<-cont+1
+NI<-NI+1
+fimenquanto
+escreva(S)
+fimalgoritmo
+
+
+algoritmo "Exercicio  C"
+var
+S,CONT,NI : INTEIRO
+
+inicio
+cont<-1
+ni<-1
+S<-0
+enquanto cont<=500 FACA
+se(ni mod 2=0)entao
+S<-S+NI
+fimse
+cont<-cont+1
+NI<-NI+1
+fimenquanto
+escreva(S)
+fimalgoritmo
+
+algoritmo "Exercicio  D"
+var
+S,CONT,NI : INTEIRO
+
+inicio
+cont<-1
+ni<-1
+S<-0
+enquanto cont<=20 FACA
+se(ni mod 2=1)entao
+S<-NI
+escreval(S)
+fimse
+cont<-cont+1
+NI<-NI+1
+fimenquanto
+
+fimalgoritmo
+
+algoritmo "exercicio E"
+
+var
+T,s,g,CONT : REAL
+inicio
+CONT<-0
+s<-3
+enquanto cont<=15 faca
+   se(cont=0)entao
+      escreval("o numero é:1")
+   senao
+      se(cont=1)entao
+         escreval("o numero é",s)
+      senao
+         se(cont=2)entao
+            t<-3*3
+            escreval(t)
+         senao
+            T<-3*t
+            escreval(T)
+         fimse
+      fimse
+   fimse
+   cont<-cont+1
+   g<-g+1
+fimenquanto
+
+
+
+fimalgoritmo
+
+algoritmo "exerF"
+
+var
+b,ex,cont,r,r_2:inteiro
+
+inicio
+Escreval("Digite um valor para a Base")
+Leia(b)
+Escreval("Digite um valor para o Expoente")
+Leia(ex)
+
+r_2<-b
+cont<-0
+
+enquanto cont<ex faca
+r<-r_2
+r_2<-r*b
+cont<-cont+1
+fimenquanto
+Escreval("O resultado é:", r)
+fimalgoritmo
+
+algoritmo "exercicio G"
+
+var
+cont,AN,AT,PT: inteiro
+inicio
+cont<-1
+AN<-0
+AT<-1
+enquanto cont<=15 faca
+   PT<-AT+AN
+   AN<-AT
+   AT<-PT
+   escreval(AT)
+   cont<-cont+1
+fimenquanto
+
+
+
+
+fimalgoritmo
+
+Algoritmo "exercicio H"
+
+Var
+cont,C,F : real
+
+
+Inicio
+cont<-10
+enquanto cont<=100 faca
+F<-(9*cont+160)/5
+escreval("a temperatura convertida e:",F)
+cont<-cont+10
+fimenquanto
+
+
+Fimalgoritmo
+
+algoritmo "exercicio I"
+
+var
+cont,a,b,c: real
+inicio
+cont<-1
+enquanto cont<=10 faca
+escreva("insira o valor:")
+leia(A)
+b<-a+b
+cont<-cont+1
+fimenquanto
+c<-b/10
+escreva("a media é:",c)
+
+
+fimalgoritmo
+algoritmo "Exercicio  j"
+var
+S,CONT,Np,J : REAL
+
+inicio
+cont<-50
+np<-50
+
+enquanto cont<=70 FACA
+S<-NP+S
+cont<-cont+2
+NP<-NP+2
+fimenquanto
+J<-S/11
+escreva(J)
+fimalgoritmo
+
+Algoritmo "exercicio K"
+
+Var
+C,A,R,T : real
+cont,S,N : literal
+
+
+Inicio
+R<-0
+cont<-"S"
+enquanto cont= "S" faca
+
+      escreva("insira a altura:")
+      leia(A)
+      escreva("insira o comprimento:")
+      leia(C)
+      escreva("insira o nome:")
+      leia(N)
+      R<- A*C
+      escreva("a area total de" ,n)
+      escreva("e de",r)
+      escreva("deseja continuar?S/N")
+      leia(cont)
+      T<-R+T
+
+fimenquanto
+escreva("a area total da area residencial e de:",T)
+
+Fimalgoritmo
+algoritmo "exercicio L"
+
+var
+cont,MA,MN,N : real
+inicio
+cont<-1
+enquanto cont>0 faca
+escreva("insira o numero:")
+leia(cont)
+se(cont>MA)entao
+MA<-cont
+senao
+MN<-cont
+fimse
+fimenquanto
+escreva("o maior e menor numero são:",MA,MN)
+fimalgoritmo
+
+
+
+
+

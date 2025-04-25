@@ -1,0 +1,12 @@
+
+#include <stdio.h>
+
+int main() {
+    int cont,s;
+  cont=1;
+  while(cont<=100){
+      s=s+cont;
+      cont=cont+1;
+  }
+  printf("o resultado é; %i",s);
+}

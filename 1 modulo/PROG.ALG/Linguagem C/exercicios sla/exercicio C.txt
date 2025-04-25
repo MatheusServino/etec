@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float v,r,a;
+    printf("insira o raio da lata:");
+    scanf("%f",&r);
+     printf("insira o altura da lata:");
+     scanf("%f",&a);
+     v= 3.14*a*pow(r,2);
+     printf("o volume da lata é: %1.f",v);
+     
+   
+
+    return 0;
+}

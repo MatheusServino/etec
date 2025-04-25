@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#mesa{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    /* gap: 1em; */
+    /* padding: 1em; */
+    height: 100vh; 
+}
+#P0, #P2{
+    background: green;
+    display: flex;
+    flex-direction: row ;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+#P1, #P3{
+    background: rgb(255, 1, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+#deck{
+    background: #000000;
+}
+#P0{
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+#P1{
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+#P2{
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+#P3{
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+#deck{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}

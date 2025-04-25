@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truco - B</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mesa">
+        <div id="P0">
+            <button id="p0-c1"></button>
+            <button id="p0-c2"></button>
+            <button id="p0-c3"></button>
+        </div>
+        <div id="P1">
+            <button id="p1-c1"></button>
+            <button id="p1-c2"></button>
+            <button id="p1-c3"></button>
+        </div>
+        <div id="P2">
+            <button id="p2-c1"></button>
+            <button id="p2-c2"></button>
+            <button id="p2-c3"></button>
+        </div>
+        <div id="P3">
+            <button id="p3-c1"></button>
+            <button id="p3-c2"></button>
+            <button id="p3-c3"></button>
+        </div>
+            <div id="deck">D</div>
+    </div>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script>
+        const socket = io()
+        socket.on("conectado", (evt) => {
+            const playerId = evt.playerId
+            const posicao = evt.posicao
+            console.log(`O player ${playerId} conectou na posicao ${posicao}`)
+        })
+    </script>
+</body>
+</html>

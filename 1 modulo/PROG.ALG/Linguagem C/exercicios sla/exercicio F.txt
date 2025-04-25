@@ -1,0 +1,14 @@
+ int a,b,x;
+    printf("insira o primeiro valor:");
+    scanf("%i",&a);
+    printf("insira o segundo valor:");
+    scanf("%i",&b);
+    x=a;
+    a=b;
+    b=x;
+    printf("o primeiro valor trocado é: %i",a);
+     printf("o segundo valor trocado é: %i",b);
+   ;
+
+    return 0;
+}

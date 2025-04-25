@@ -1,0 +1,15 @@
+#include <stdio.h>
+ 
+int main() {
+  float S,cont,Np,J;
+    cont=50;
+    Np=50;
+while (cont<=70){
+S=Np+S;
+cont=cont+2;
+Np=Np+2;
+}
+J=S/11;
+printf("%.1f" , J);
+    return 0;
+}

@@ -1,0 +1,340 @@
+Exercício A
+ 
+algoritmo "ExercicioA"
+var a,b,r: inteiro
+ 
+inicio
+Escreva ("Digite o valor:")
+Leia (a)
+Escreva ("Digite outro valor")
+Leia (b)
+ 
+se (a>b) entao
+r<-a-b
+senao 
+r<-b-a
+ 
+fimse
+ 
+Escreva ("O resultado é: ",r)
+ 
+fimalgoritmo
+ 
+ 
+Exercício B
+ 
+algoritmo "ExercicioB"
+ 
+var
+a: inteiro
+inicio
+Escreva ("Digite um numero inteiro")
+leia (a)
+Se (a<0) entao 
+a<-a*(-1)
+ 
+fimse
+ 
+Escreva (a)
+ 
+fimalgoritmo
+ 
+ 
+Exercício C
+ 
+algoritmo "ExercicioC"
+ 
+var A,B,C,D,N: real
+ 
+inicio
+Escreva ("Digite nota A: ")
+leia (A)
+Escreva ("Digite nota B: ")
+leia (B)
+Escreva ("Digite nota C: ")
+leia (C)
+Escreva ("Digite nota D: ")
+leia (D)
+N<-(A+B+C+D)/4
+Se (N>=5) entao
+Escreva ("Aprovado")
+Senao
+Escreva ("Reprovado")
+Fimse
+Escreva ("Sua média é: ",N)
+ 
+fimalgoritmo
+ 
+ 
+Exercício D
+ 
+algoritmo "ExercicioD"
+ 
+var A,B,C,D,F,N,NE:real
+ 
+inicio
+Escreva ("Digite nota A")
+leia (A)
+Escreva ("Digite nota B")
+leia (B)
+Escreva ("Digite nota C")
+leia (C)
+Escreva ("Digite nota D")
+leia (D)
+N<-(A+B+C+D)/4
+Se (N>=7) entao
+Escreva ("Aprovado, Sua nota é: ",N)
+senao
+Escreva ("Digite nota F")
+leia (F)
+NE<-(N+F)/2
+Se(NE>5) entao
+Escreva ("Aprovado, Sua nota é; ",NE)
+fimse
+ 
+fimse
+ 
+ 
+fimalgoritmo
+ 
+ 
+Exercício E
+ 
+algoritmo "ExercicioE"
+ 
+ 
+var
+A,B,C: INTEIRO
+D,X1,X2: REAL
+ 
+ 
+inicio
+Escreva ("Entre com um valor inteiro para A: ")
+Leia (A)
+Escreva ("Entre com um valor inteiro para B: ")
+Leia (B)
+Escreva ("Entre com um valor inteiro para C: ")
+Leia (C)
+D<-(B^2)-(4*A*C)
+Escreval (D)
+ 
+Se (D<0) entao
+Escreval (" não existe raizes reais ")
+ 
+Senao
+ 
+Se (D=0) entao
+ 
+x1<-(-b+RAIZQ(D))/(2*A)
+ 
+Escreval ("x1: ",x1)
+ 
+Escreval ("x2: ",x2)
+ 
+fimse
+ 
+ 
+fimse
+ 
+ 
+// 1, 12, -13
+// 1, 2, 1
+// 1, -1, 2
+ 
+ 
+fimalgoritmo
+ 
+ 
+EXERCÍCIO F
+ 
+algoritmo "ExercicioF"
+
+var
+  a, b, c: real
+inicio
+  escreva("Digite o valor de A: ")
+  leia(a)
+  escreva("Digite o valor de B: ")
+  leia(b)
+  escreva("Digite o valor de C: ")
+  leia(c)
+  se (a < b) e (b < c) entao
+    escreva("A ordem crescente é: ", a, ", ", b, ", ", c)
+  senao
+     se (b < a) e (a < c) entao
+      escreva("A ordem crescente é: ", b, ", ", a, ", ", c)
+     senao
+       se (c < a) e (a < b) entao
+          escreva("A ordem crescente é: ", c, ", ", a, ", ", b)
+       fimse
+    fimse
+  fimse
+fimalgoritmo
+ 
+ 
+EXERCICIO G
+ 
+ 
+algoritmo "ExercicioG"
+
+var
+  a, b, c, d: inteiro
+inicio
+  escreva("Digite o valor de A: ")
+  leia(a)
+  escreva("Digite o valor de B: ")
+  leia(b)
+  escreva("Digite o valor de C: ")
+  leia(c)
+  escreva("Digite o valor de D: ")
+  leia(d)
+  se (a mod 2=0) e (a mod 3=0) entao
+  escreval ("o valor de A é divisivel por 2 e 3")
+  senao
+  escreval("O número A não é divisível por 2 e 3")
+  fimse
+  se (b mod 2=0) e (b mod 3=0) entao
+escreval ("o valor de B é divisivel por 2 e 3")
+senao
+escreval("O número B não é divisível por 2 e 3")
+fimse
+se(c mod 2=0) e (c mod 3=0) entao
+escreval ("o valor de C é divisivel por 2 e 3")
+senao
+escreval("O número C não é divisível por 2 e 3")
+fimse
+se (d mod 2=0) e (d mod 3=0) entao
+escreval ("o valor de D é divisivel por 2 e 3")
+senao
+escreval("O número D não é divisível por 2 e 3")
+fimse
+fimalgoritmo
+ 
+ 
+EXERCICIO H
+ 
+algoritmo "Exercicio H"
+
+var
+  a, b, c, d, f: inteiro
+inicio
+escreva("Digite o valor de A: ")
+leia(a)
+escreva("Digite o valor de B: ")
+leia(b)
+escreva("Digite o valor de C: ")
+leia(c)
+escreva("Digite o valor de D: ")
+leia(d)
+escreva("Digite o valor de F: ")
+leia(f)
+se (a > b) e (a > c) e (a > d) e (a > f) entao
+escreval("O maior valor dos numeros é: ", a)
+fimse
+se (b > a) e (b > c) e (b > d) e (b > f) entao
+escreval("O maior valor dos numeros é: ", b)
+fimse
+se (c > a) e (c > b) e (c > d) e (c > f) entao
+escreval("O maior valor dos numeros é: ", c)
+fimse
+se (d > a) e (d > b) e (d > c) e (d > f) entao
+escreval("O maior valor dos numeros é: ", d)
+fimse
+se (f > a) e (f > b) e (f > c) e (f > d) entao
+escreval("O maior valor dos numeros é: ", f)
+fimse
+se (a < b) e (a < c) e (a < d) e (a < f) entao
+escreval("O menor valor dos numeros é: ", a)
+fimse
+se (b < a) e (b < c) e (b < d) e (b < f) entao
+escreval("O menor valor dos numeros é: ", b)
+  fimse
+se (c < a) e (c < b) e (c < d) e (c < f) entao
+escreval("O menor valor dos numeros é: ", c)
+fimse
+se (d < a) e (d < b) e (d < c) e (d < f) entao
+escreval("O menor valor dos numeros é: ", d)
+fimse
+se (f < a) e (f < b) e (f < c) e (f < d) entao
+escreval("O menor valor dos numeros é: ", f)
+fimse
+Fimalgoritmo
+ 
+ 
+EXERCICIO I
+ 
+algoritmo "Exercicioi"
+ 
+var x,p,i:inteiro
+ 
+inicio
+Escreva (" Digite o valor: ")
+Leia(x)
+Se (x MOD 2=0) entao
+ 
+escreva ("Seu número é par")
+Senao
+escreva ("Seu número é ímpar")
+fimse
+ 
+ 
+fimalgoritmo
+ 
+EXERCICIO J
+ 
+algoritmo "Exercicio J"
+
+var
+  a: real
+inicio
+escreva(" Insira um valor: ")
+leia(a)
+se (a<1) ou (a>9) entao
+escreval("O valor nao esta dentro da faixa")
+senao
+escreval("O valor esta dentro da faixa")
+fimse
+
+Fimalgoritmo
+
+ 
+ 
+EXERCICIO K
+ 
+ 
+algoritmo "Exercicio K"
+
+var
+  a: inteiro
+inicio
+escreva("Insira o valor: ")
+leia(a)
+se (a<3) entao
+escreval(a)
+fimse
+
+Fimalgoritmo
+
+ 
+ 
+EXERCICIO L
+ 
+ 
+
+algoritmo "Exercicio L"
+
+var
+  n, s, m, f : literal
+inicio
+escreva("Insira seu nome: ")
+leia(n)
+escreva("Informe seu sexo (M/F): ")
+leia(s)
+se (s = "M") entao
+escreva("BEM-VINDO Ilmo Sr. ", n)
+senao
+   se (s = "F") entao
+     escreval("BEM-VINDA Ilma Sra. ", n)
+   fimse
+fimse
+Fimalgoritmo

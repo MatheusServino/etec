@@ -1,0 +1,312 @@
+-----------------------EXERCICIOS IF-----------------------------------------
+exercicio D
+#include <stdio.h>
+
+int main() {
+    float n1,n2,n3,n4,nt,ne,nf;
+    printf("insira a primeira nota:");
+    scanf("%f",&n1);
+    printf("insira a segunda nota:");
+    scanf("%f",&n2);
+    printf("insira a terceira nota:");
+    scanf("%f",&n3);
+    printf("insira a quarta nota:");
+    scanf("%f",&n4);
+nt=(n1+n2+n3+n4)/4;
+if(nt>=7){
+    printf("o aluno foi aprovado:), a média final foi: %1.f",nt);
+    
+}
+else{
+    printf("o aluno foi reprovado:(, a nota final foi: %1.f", nt);
+    printf("insira a nota do exame:");
+    scanf("%f",&ne);
+ nf=(ne+nt)/2;
+ if(nf>=5){
+     printf("o aluno foi aprovado:), a nota final foi: %1.f",nf);
+ }
+ else{
+     printf("o aluno foi reprovado:(");
+ }
+}
+
+    return 0;
+}
+exercicio G
+
+#include <stdio.h>
+
+int main() {
+    int v1,v2,v3,v4;
+    printf("insira o primeiro valor:");
+    scanf("%i",&v1);
+    if((v1%2==0)||(v1%3==0)){
+printf("o valor é divisivel por: %i",v1);
+}
+     printf("insira o segundo valor:");
+    scanf("%i",&v2);
+    if((v2%2==0)||(v2%3==0)){
+printf("o valor é divisivel por: %i",v2);
+}
+     printf("insira o terceiro valor:");
+    scanf("%i",&v3);
+    if((v3%2==0)||(v3%3==0)){
+printf("o valor é divisivel por: %i",v3);
+}
+     printf("insira o quarto valor:");
+    scanf("%i",&v4);
+    if((v4%2==0)||(v4%3==0)){
+printf("o valor é divisivel por: %i",v4);
+}
+
+
+    
+    
+   
+  
+
+    return 0;
+}
+exercicio H
+#include <stdio.h>
+
+int main() {
+  int n1,n2,n3,n4,n5,ma,me;
+  printf("insira o primeiro valor:");
+  scanf("%i",&n1);
+  ma=n1;
+  me=n1;
+     printf("insira o segundo valor:");
+  scanf("%i",&n2);
+  if(n2>ma){
+      ma=n2;
+  }
+  if(n2<me){
+      me=n2;
+  }
+  printf("insira o terceiro valor");
+  scanf("%i",&n3);
+  if(n3>ma){
+  ma=n3;
+  }
+  if(n3<me){
+      me=n3;
+  }
+  printf("insira o quarto valor");
+  scanf("%i",&n4);
+  if(n4>ma){
+  ma=n4;
+  }
+  if(n4<me);{
+      me=n4;
+  }
+  printf("insira o quinto valor");
+  scanf("%i",&n5);
+  if(n5>ma){
+  ma=n5;
+  }
+  if(n5<me);{
+      me=n5;
+  }
+  printf("o maior numero é: %i",ma);
+  printf("o menor numero é: %i",me);
+  
+
+    return 0;
+}
+---------------------------EXERCICIO DO------------------------------------
+EXERCICIO A
+#include <stdio.h>
+
+int main() {
+    int cont,a;
+    cont=15;
+   do{
+       a=cont*cont;
+       printf("%i\n", a);
+       cont=cont+1;
+   }while(cont<=200);
+    
+    
+
+    return 0;
+}
+EXERCICIO C
+#include <stdio.h>
+
+int main() {
+int cont,a;
+cont=1;
+do{
+    if(cont%4==0){
+        printf("o numero %i é divisivel\n",cont);
+    }
+    cont=cont+1;
+}while(cont<=200);
+    
+    
+
+    return 0;
+}
+EXERCICIO D
+
+#include <stdio.h>
+
+int main() {
+    float cont,a;
+    cont=1;
+    a=1;
+    do{
+        a=a*2;
+        printf("%1.f\n",a);
+        cont=cont+1;
+    }
+    while(cont<=64);
+    
+    
+    
+    
+    
+    return 0;
+}
+-----------------EXERCICIOS FOR---------------------------------------------
+EXERCICIO B
+#include <stdio.h>
+
+int main() {
+    int i,a,b;
+    printf("insira o numero da tabuada desejada:");
+    scanf("%i",&a);
+ for(i=1;i<=10;i++){
+     b=a*i;
+     printf("%i\n",b);
+ }
+    return 0;
+}
+EXERCICIO J
+#include <stdio.h>
+
+int main() {
+ int i;
+ float a;
+ for(i=10;i<=100;i=i+10){
+   a=(9*i+160)/5;
+   printf("%1.f\n",a);
+ }
+
+    return 0;
+}
+EXERCICIO K
+#include <stdio.h>
+
+int main() {
+int i,a,b;
+a=1;
+b=1;
+for(i=1;i=10,i++){
+    if(i%2==1){
+       do{
+           a=a*b;
+           b=b+1;
+      }while(b>i);
+    }
+    printf("o resultado é: %i\n",a);
+}
+    return 0;
+}
+------------------EXERCICIOS LOGICA---------------------------------------
+EXERCICIO C
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float v,r,a;
+    printf("insira o raio da lata:");
+    scanf("%f",&r);
+     printf("insira o altura da lata:");
+     scanf("%f",&a);
+     v= 3.14*a*pow(r,2);
+     printf("o volume da lata é: %1.f",v);
+     
+   
+
+    return 0;
+}
+EXERCICIO E
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float v,p,t,x;
+    printf("digite o valor: ");
+    scanf("%f",&v);
+    printf("digite o tempo: ");
+    scanf("%f",&t);
+     printf("digite a taxa: ");
+    scanf("%f",&x);
+    p=v+((v*x/100)*t);
+    printf("O valor da pretação é: %f",p);
+   
+
+    return 0;
+}
+EXERCICIO F
+ int a,b,x;
+    printf("insira o primeiro valor:");
+    scanf("%i",&a);
+    printf("insira o segundo valor:");
+    scanf("%i",&b);
+    x=a;
+    a=b;
+    b=x;
+    printf("o primeiro valor trocado é: %i",a);
+     printf("o segundo valor trocado é: %i",b);
+   ;
+
+    return 0;
+}
+-----------------------exercicio while---------------------------------------
+exercicio B
+
+
+#include <stdio.h>
+
+int main() {
+    int cont,s;
+  cont=1;
+  while(cont<=100){
+      s=s+cont;
+      cont=cont+1;
+  }
+  printf("o resultado é; %i",s);
+}
+EXERCICIO H
+
+#include <stdio.h>
+
+int main() {
+  float cont,f;
+  cont=0;
+  while(cont<=100){
+  f=(9*cont+160)/5;
+  printf("os graus convertido para Fahrenheit é: %1.f\n",f);
+  cont=cont+10;
+  }
+  
+}
+EXERCICIO J
+#include <stdio.h>
+ 
+int main() {
+  float S,cont,Np,J;
+    cont=50;
+    Np=50;
+while (cont<=70){
+S=Np+S;
+cont=cont+2;
+Np=Np+2;
+}
+J=S/11;
+printf("%.1f" , J);
+    return 0;
+}

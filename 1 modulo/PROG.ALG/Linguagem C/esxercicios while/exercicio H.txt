@@ -1,0 +1,13 @@
+
+#include <stdio.h>
+
+int main() {
+  float cont,f;
+  cont=0;
+  while(cont<=100){
+  f=(9*cont+160)/5;
+  printf("os graus convertido para Fahrenheit é: %1.f\n",f);
+  cont=cont+10;
+  }
+  
+}

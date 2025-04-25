@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    float n1,n2,n3,n4,nt,ne,nf;
+    printf("insira a primeira nota:");
+    scanf("%f",&n1);
+    printf("insira a segunda nota:");
+    scanf("%f",&n2);
+    printf("insira a terceira nota:");
+    scanf("%f",&n3);
+    printf("insira a quarta nota:");
+    scanf("%f",&n4);
+nt=(n1+n2+n3+n4)/4;
+if(nt>=7){
+    printf("o aluno foi aprovado:), a média final foi: %1.f",nt);
+    
+}
+else{
+    printf("o aluno foi reprovado:(, a nota final foi: %1.f", nt);
+    printf("insira a nota do exame:");
+    scanf("%f",&ne);
+ nf=(ne+nt)/2;
+ if(nf>=5){
+     printf("o aluno foi aprovado:), a nota final foi: %1.f",nf);
+ }
+ else{
+     printf("o aluno foi reprovado:(");
+ }
+}
+
+    
+    
+    
+
+    return 0;
+}

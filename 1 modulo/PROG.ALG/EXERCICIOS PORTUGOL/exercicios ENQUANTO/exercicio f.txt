@@ -1,0 +1,22 @@
+algoritmo "exerF"
+
+var
+b,ex,cont,r,r_2:inteiro
+
+inicio
+Escreval("Digite um valor para a Base")
+Leia(b)
+Escreval("Digite um valor para o Expoente")
+Leia(ex)
+
+r_2<-b
+cont<-0
+
+enquanto cont<ex faca
+r<-r_2
+r_2<-r*b
+cont<-cont+1
+fimenquanto
+Escreval("O resultado é:", r)
+fimalgoritmo
+
